@@ -1,14 +1,7 @@
-**Vite Magic**, which users can download and use directly. This version focuses on how users can download, install, and use the application without needing to worry about Python or dependencies.
+Vite Magic is a desktop application built with Python and PySide6 that automates the creation of React and Next.js projects. It simplifies the process of setting up a new project, installing dependencies, configuring authentication (Clerk and Firebase), and creating custom folders. The app also includes a user-friendly GUI for ease of use.
 
----
+![icon-for-an-app-which-generates-vite-code-removebg-preview](https://github.com/user-attachments/assets/adb7ed36-e467-4c72-b35a-328df2477dab)
 
-# Vite Magic - Project Creator
-
-![Vite Magic Logo](your_logo.png)
-
-**Vite Magic** is a desktop application that automates the creation of React and Next.js projects. It simplifies the process of setting up a new project, installing dependencies, configuring authentication (Clerk and Firebase), and creating custom folders. With its user-friendly GUI, you can create and manage projects in just a few clicks!
-
----
 
 ## Features
 
@@ -37,36 +30,52 @@
 
 ---
 
-## Download and Installation
+## Screenshots
+
+![image](https://github.com/user-attachments/assets/4b0971ae-7d65-479b-a680-821d8e6b6137)
+->
+![image](https://github.com/user-attachments/assets/cb56a0d5-afb1-416e-991c-32263d867b3c)
+
+
+---
+
+## Installation
 
 ### Prerequisites
 
-- **Node.js and npm**: Required for React/Next.js project setup. Download and install from [nodejs.org](https://nodejs.org/).
-- **VS Code (Optional)**: Recommended for opening the project after creation. Download from [code.visualstudio.com](https://code.visualstudio.com/).
+- **Python 3.8 or higher**
+- **Node.js and npm** (for React/Next.js project setup)
+- **Git** (optional, for initializing a Git repository)
 
 ### Steps
 
-1. **Download the Application**:
-   - Download the latest release of **Vite Magic** from the [Releases page](https://github.com/your-username/vite-magic/releases).
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/mkdir-KumarAnupam/vite-magic.git
+   cd vite-magic
+   ```
 
-2. **Run the Application**:
-   - **Windows**: Double-click the `ViteMagic.exe` file.
-   - **macOS/Linux**: Open the terminal, navigate to the downloaded file, and run:
-     ```bash
-     ./ViteMagic
-     ```
+2. **Install Python Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-3. **Configure Settings (Optional)**:
-   - Go to `Settings > Edit Project Settings` to configure the base directory and project placements.
+3. **Run the Application**:
+   ```bash
+   python main.py
+   ```
 
 ---
 
 ## Usage
 
 1. **Launch the Application**:
-   - Run the downloaded executable to start **Vite Magic**.
+   - Run `python main.py` to start the application.
 
-2. **Create a New Project**:
+2. **Configure Settings (Optional)**:
+   - Go to `Settings > Edit Project Settings` to configure the base directory and project placements.
+
+3. **Create a New Project**:
    - Fill in the required fields:
      - **Project Placement**: Select where the project will be created.
      - **Project Type**: Choose between React or Next.js.
@@ -75,43 +84,41 @@
      - **Authentication Setup**: Choose between Clerk, Firebase, both, or none.
    - Click **Create Project** to start the process.
 
-3. **Monitor Progress**:
+4. **Monitor Progress**:
    - The progress bar and log output will show the status of the project creation.
 
-4. **Open in VS Code**:
+5. **Open in VS Code**:
    - Once the project is created, it will automatically open in VS Code.
 
-5. **Abort a Project (Optional)**:
+6. **Abort a Project (Optional)**:
    - Run the `AbortProject.py` script in the project directory to delete the project if needed.
 
 ---
 
-## Screenshots
+## Packaging the Application
 
-![Main Window](screenshots/main_window.png) <!-- Replace with actual screenshot -->
-![Settings Dialog](screenshots/settings_dialog.png) <!-- Replace with actual screenshot -->
+To distribute the application as a standalone executable:
 
----
+1. **Install PyInstaller**:
+   ```bash
+   pip install pyinstaller
+   ```
 
-## Frequently Asked Questions (FAQ)
+2. **Create the Executable**:
+   ```bash
+   pyinstaller --onefile --windowed --icon=your_icon.ico main.py
+   ```
 
-### 1. **What is the base directory?**
-   - The base directory is the root folder where all your projects will be created. You can configure it in the **Settings** menu.
+   Replace `your_icon.ico` with the path to your custom icon.
 
-### 2. **Can I use this without VS Code?**
-   - Yes, the application will still create the project, but it won't automatically open it in VS Code.
-
-### 3. **How do I set up Clerk or Firebase?**
-   - After creating the project, you’ll need to add your API keys to the generated `.env.local` (for Clerk) or `firebaseConfig.js` (for Firebase) files.
-
-### 4. **Can I delete a project after creating it?**
-   - Yes, use the `AbortProject.py` script included in the project directory to delete it.
+3. **Locate the Executable**:
+   - The executable will be created in the `dist` folder.
 
 ---
 
 ## Contributing
 
-If you'd like to contribute to the development of **Vite Magic**, follow these steps:
+Contributions are welcome! If you'd like to contribute, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature or bugfix.
@@ -144,10 +151,3 @@ If you encounter any issues or have questions, feel free to open an issue on Git
 Enjoy using **Vite Magic**! 🚀
 
 ---
-
-### Notes:
-- Replace placeholders like `your-username`, `your_logo.png`, and `screenshots/main_window.png` with actual values.
-- Add screenshots of your application to the `screenshots` folder and link them in the README.
-- Update the `LICENSE` file with your preferred license (e.g., MIT, Apache, etc.).
-
-Let me know if you need further adjustments! 😊
