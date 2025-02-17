@@ -1,0 +1,57 @@
+{
+    "Dark": {
+      "background": "#2e3440",
+      "text": "#eceff4",
+      "input_background": "#3b4252",
+      "input_text": "#d8dee9",
+      "button_background": "#5e81ac",
+      "button_hover": "#81a1c1",
+      "progress_bar": "#81a1c1"
+    },
+    "Light": {
+      "background": "#f0f0f0",
+      "text": "#333",
+      "input_background": "#fff",
+      "input_text": "#333",
+      "button_background": "#007acc",
+      "button_hover": "#005f99",
+      "progress_bar": "#005f99"
+    },
+    "Ocean": {
+      "background": "#1a1a2e",
+      "text": "#e0e0e0",
+      "input_background": "#16213e",
+      "input_text": "#e0e0e0",
+      "button_background": "#0f3460",
+      "button_hover": "#1f4068",
+      "progress_bar": "#1f4068"
+    },
+    "Forest": {
+      "background": "#1a2e1a",
+      "text": "#e0e0e0",
+      "input_background": "#162e16",
+      "input_text": "#e0e0e0",
+      "button_background": "#0f600f",
+      "button_hover": "#1f681f",
+      "progress_bar": "#1f681f"
+    },
+    "Sunset": {
+      "background": "#2e1a1a",
+      "text": "#e0e0e0",
+      "input_background": "#2e1616",
+      "input_text": "#e0e0e0",
+      "button_background": "#600f0f",
+      "button_hover": "#681f1f",
+      "progress_bar": "#681f1f"
+    },
+    "Midnight": {
+      "background": "#000033",
+      "text": "#ffffff",
+      "input_background": "#000066",
+      "input_text": "#ffffff",
+      "button_background": "#000099",
+      "button_hover": "#0000cc",
+      "progress_bar": "#0000cc"
+    }
+  }
+  
